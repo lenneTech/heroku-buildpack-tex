@@ -56,3 +56,6 @@ echo "Don't forget to add ${bindir} to your PATH."
 export PATH=$PATH:$bindir
 
 tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final koma-script
+tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final amscls
+tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final amsfonts
+tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final babel-german

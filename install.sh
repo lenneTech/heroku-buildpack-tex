@@ -55,4 +55,4 @@ echo "Install complete."
 echo "Don't forget to add ${bindir} to your PATH."
 export PATH=$PATH:$bindir
 
-tlmgr install --reinstall --repository http://www.komascript.de/repository/texlive/2016 koma-script
+tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final koma-script

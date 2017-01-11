@@ -60,4 +60,4 @@ tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/20
 tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final amsfonts
 tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final babel-german
 tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final titlesec
-tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final secsty
+tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final sectsty

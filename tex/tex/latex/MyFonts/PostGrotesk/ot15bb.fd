@@ -1,0 +1,58 @@
+%Filename: ot15bb.fd
+%Created by: tex 5bb-drv
+%Created using fontinst v1.933
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ot15bb.fd}
+   [2017/06/27 Fontinst v1.933 font definitions for OT1/5bb.]
+
+\expandafter\ifx\csname MF@PGrot@scale\endcsname\relax
+  \let\MF@PGrot@@scale\@empty
+\else
+  \edef\MF@PGrot@@scale{s*[\csname MF@PGrot@scale\endcsname]}
+\fi
+
+
+\DeclareFontFamily{OT1}{5bb}{}
+
+\DeclareFontShape{OT1}{5bb}{m}{n}{
+   <-> \MF@PGrot@@scale 5bbr7t
+}{}
+
+\DeclareFontShape{OT1}{5bb}{m}{sc}{
+   <-> \MF@PGrot@@scale 5bbrc7t
+}{}
+
+\DeclareFontShape{OT1}{5bb}{m}{sl}{
+   <-> \MF@PGrot@@scale 5bbro7t
+}{}
+
+\DeclareFontShape{OT1}{5bb}{m}{it}{
+   <-> \MF@PGrot@@scale 5bbri7t
+}{}
+
+\DeclareFontShape{OT1}{5bb}{b}{n}{
+   <-> \MF@PGrot@@scale 5bbb7t
+}{}
+
+\DeclareFontShape{OT1}{5bb}{b}{sc}{
+   <-> \MF@PGrot@@scale 5bbbc7t
+}{}
+
+\DeclareFontShape{OT1}{5bb}{b}{sl}{
+   <-> \MF@PGrot@@scale 5bbbo7t
+}{}
+
+\DeclareFontShape{OT1}{5bb}{l}{it}{
+   <-> \MF@PGrot@@scale 5bbli7t
+}{}
+
+\DeclareFontShape{OT1}{5bb}{bx}{n}{<->ssub * 5bb/b/n}{}
+\DeclareFontShape{OT1}{5bb}{bx}{sc}{<->ssub * 5bb/b/sc}{}
+\DeclareFontShape{OT1}{5bb}{bx}{sl}{<->ssub * 5bb/b/sl}{}
+\DeclareFontShape{OT1}{5bb}{b}{it}{<->ssub * 5bb/b/sl}{}
+\DeclareFontShape{OT1}{5bb}{bx}{it}{<->ssub * 5bb/b/it}{}
+\DeclareFontShape{OT1}{5bb}{l}{sl}{<->ssub * 5bb/l/it}{}
+
+\endinput

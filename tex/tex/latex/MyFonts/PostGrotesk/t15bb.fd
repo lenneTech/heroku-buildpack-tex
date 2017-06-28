@@ -1,0 +1,58 @@
+%Filename: t15bb.fd
+%Created by: tex 5bb-drv
+%Created using fontinst v1.933
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{t15bb.fd}
+   [2017/06/27 Fontinst v1.933 font definitions for T1/5bb.]
+
+\expandafter\ifx\csname MF@PGrot@scale\endcsname\relax
+  \let\MF@PGrot@@scale\@empty
+\else
+  \edef\MF@PGrot@@scale{s*[\csname MF@PGrot@scale\endcsname]}
+\fi
+
+
+\DeclareFontFamily{T1}{5bb}{}
+
+\DeclareFontShape{T1}{5bb}{m}{n}{
+   <-> \MF@PGrot@@scale 5bbr8t
+}{}
+
+\DeclareFontShape{T1}{5bb}{m}{sc}{
+   <-> \MF@PGrot@@scale 5bbrc8t
+}{}
+
+\DeclareFontShape{T1}{5bb}{m}{sl}{
+   <-> \MF@PGrot@@scale 5bbro8t
+}{}
+
+\DeclareFontShape{T1}{5bb}{m}{it}{
+   <-> \MF@PGrot@@scale 5bbri8t
+}{}
+
+\DeclareFontShape{T1}{5bb}{b}{n}{
+   <-> \MF@PGrot@@scale 5bbb8t
+}{}
+
+\DeclareFontShape{T1}{5bb}{b}{sc}{
+   <-> \MF@PGrot@@scale 5bbbc8t
+}{}
+
+\DeclareFontShape{T1}{5bb}{b}{sl}{
+   <-> \MF@PGrot@@scale 5bbbo8t
+}{}
+
+\DeclareFontShape{T1}{5bb}{l}{it}{
+   <-> \MF@PGrot@@scale 5bbli8t
+}{}
+
+\DeclareFontShape{T1}{5bb}{bx}{n}{<->ssub * 5bb/b/n}{}
+\DeclareFontShape{T1}{5bb}{bx}{sc}{<->ssub * 5bb/b/sc}{}
+\DeclareFontShape{T1}{5bb}{bx}{sl}{<->ssub * 5bb/b/sl}{}
+\DeclareFontShape{T1}{5bb}{b}{it}{<->ssub * 5bb/b/sl}{}
+\DeclareFontShape{T1}{5bb}{bx}{it}{<->ssub * 5bb/b/it}{}
+\DeclareFontShape{T1}{5bb}{l}{sl}{<->ssub * 5bb/l/it}{}
+
+\endinput

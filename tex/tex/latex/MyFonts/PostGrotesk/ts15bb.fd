@@ -1,0 +1,49 @@
+%Filename: ts15bb.fd
+%Created by: tex 5bb-drv
+%Created using fontinst v1.933
+
+%THIS FILE SHOULD BE PUT IN A TEX INPUTS DIRECTORY
+
+\ProvidesFile{ts15bb.fd}
+   [2017/06/27 Fontinst v1.933 font definitions for TS1/5bb.]
+
+\expandafter\ifx\csname MF@PGrot@scale\endcsname\relax
+  \let\MF@PGrot@@scale\@empty
+\else
+  \edef\MF@PGrot@@scale{s*[\csname MF@PGrot@scale\endcsname]}
+\fi
+
+
+\DeclareFontFamily{TS1}{5bb}{}
+
+\DeclareFontShape{TS1}{5bb}{m}{n}{
+   <-> \MF@PGrot@@scale 5bbr8c
+}{}
+
+\DeclareFontShape{TS1}{5bb}{m}{sl}{
+   <-> \MF@PGrot@@scale 5bbro8c
+}{}
+
+\DeclareFontShape{TS1}{5bb}{m}{it}{
+   <-> \MF@PGrot@@scale 5bbri8c
+}{}
+
+\DeclareFontShape{TS1}{5bb}{b}{n}{
+   <-> \MF@PGrot@@scale 5bbb8c
+}{}
+
+\DeclareFontShape{TS1}{5bb}{b}{sl}{
+   <-> \MF@PGrot@@scale 5bbbo8c
+}{}
+
+\DeclareFontShape{TS1}{5bb}{l}{it}{
+   <-> \MF@PGrot@@scale 5bbli8c
+}{}
+
+\DeclareFontShape{TS1}{5bb}{bx}{n}{<->ssub * 5bb/b/n}{}
+\DeclareFontShape{TS1}{5bb}{bx}{sl}{<->ssub * 5bb/b/sl}{}
+\DeclareFontShape{TS1}{5bb}{b}{it}{<->ssub * 5bb/b/sl}{}
+\DeclareFontShape{TS1}{5bb}{bx}{it}{<->ssub * 5bb/b/it}{}
+\DeclareFontShape{TS1}{5bb}{l}{sl}{<->ssub * 5bb/l/it}{}
+
+\endinput

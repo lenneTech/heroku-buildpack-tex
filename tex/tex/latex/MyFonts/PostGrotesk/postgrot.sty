@@ -1,0 +1,17 @@
+\NeedsTeXFormat{LaTeX2e}%
+\ProvidesPackage{postgrot}[2010/03/05 v1.0 Post Grotesk]%
+\RequirePackage{textcomp}%
+\RequirePackage{xkeyval}%
+\define@key{postgrot.sty}{scaled}[1.0]%
+{%
+  \def\MF@PGrot@scale{#1}%
+}%
+\define@key{postgrot.sty}{leading}[1.0]%
+{%
+  \linespread{#1}%
+}%
+\ExecuteOptionsX{scaled}%
+\ProcessOptionsX\relax%
+\renewcommand*{\rmdefault}{5bb}%
+\newcommand\PostGrotesk{\fontfamily{5bb}\fontseries{m}\fontshape{n}\selectfont}%
+\endinput%

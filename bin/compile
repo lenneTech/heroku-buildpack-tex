@@ -69,14 +69,7 @@ echo "export PATH=\$HOME/.texlive/bin/${PLATFORM}:\$PATH" >> $PROFILE_D
 
 
 export PATH=$HOME/.texlive/bin/$PLATFORM:$PATH
-tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final koma-script
-tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final amscls
-tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final amsfonts
-tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final babel-german
-tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final titlesec
-tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final sectsty
-tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final collection-fontsrecommended
-tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final lastpage
+tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final koma-script amscls amsfonts babel-german titlesec sectsty collection-fontsrecommended lastpage tocloft adjustbox collectbox
 
 TEXMFHOME=`kpsewhich -var-value TEXMFHOME`
 cp -r $BIN_DIR/../tex/* $TEXMFHOME/

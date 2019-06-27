@@ -67,9 +67,10 @@ fi
 echo "export PATH=\$HOME/.texlive/bin/${PLATFORM}:\$PATH" >> $PROFILE_D
 
 
-
+df -h
 export PATH=$HOME/.texlive/bin/$PLATFORM:$PATH
 tlmgr install --reinstall --repository ftp://tug.org/historic/systems/texlive/2014/tlnet-final koma-script amscls amsfonts babel-german titlesec sectsty collection-fontsrecommended lastpage tocloft adjustbox collectbox
+df -h
 
 TEXMFHOME=`kpsewhich -var-value TEXMFHOME`
 cp -r $BIN_DIR/../tex/* $TEXMFHOME/

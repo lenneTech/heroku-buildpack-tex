@@ -69,7 +69,7 @@ echo "export PATH=\$HOME/.texlive/bin/${PLATFORM}:\$PATH" >> $PROFILE_D
 
 df -h
 export PATH=$HOME/.texlive/bin/$PLATFORM:$PATH
-tlmgr install --reinstall --repository ftp://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2014/tlnet-final koma-script amscls amsfonts babel-german titlesec sectsty collection-fontsrecommended lastpage tocloft adjustbox collectbox
+tlmgr install --reinstall --repository ftp://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2014/tlnet-final geometry babel-german babel-english graphics hyperref float oberdiek subfigure caption capt-of xcolor fancyhdr
 df -h
 
 TEXMFHOME=`kpsewhich -var-value TEXMFHOME`
